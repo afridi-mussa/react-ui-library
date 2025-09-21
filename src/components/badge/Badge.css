@@ -1,0 +1,45 @@
+.badge {
+  display: inline-block;
+  padding: 10px 20px;          /* Bigger size */
+  border-radius: 9999px;       /* Fully rounded pill shape */
+  font-size: 14px;             /* Slightly larger text */
+  font-weight: 700;            /* Bolder for emphasis */
+  margin: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;       /* Adds spacing for readability */
+  transition: all 0.3s ease;   /* Smooth hover effect */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Soft shadow */
+  cursor: default;
+}
+
+/* Variants */
+.badge.primary {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+}
+
+.badge.success {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+}
+
+.badge.warning {
+  background: linear-gradient(135deg, #fde047, #facc15);
+  color: #222;
+}
+
+.badge.error {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+}
+
+.badge.gradient {
+  background: linear-gradient(135deg, #ee0979, #ff6a00);
+  color: white;
+}
+
+/* Hover effect */
+.badge:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}

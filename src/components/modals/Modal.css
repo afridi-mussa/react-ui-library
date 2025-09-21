@@ -1,0 +1,185 @@
+/* Overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+/* Base Modal */
+.modal {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 20px;
+  width: 420px;
+  max-width: 95%;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+  animation: slideZoom 0.35s ease;
+  position: relative;
+  backdrop-filter: blur(12px);
+}
+
+/* Login Card style */
+.modal-card {
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Close button */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  color: #dc2626;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.modal-close:hover {
+  transform: rotate(90deg) scale(1.2);
+}
+
+/* Title */
+.modal-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #111827;
+  text-align: center;
+}
+
+/* Body for login */
+.modal-body {
+  padding: 24px;
+}
+
+/* Inputs */
+.input-group {
+  margin-bottom: 16px;
+}
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #374151;
+}
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+.input-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* Options */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #374151;
+}
+.link {
+  font-size: 14px;
+  color: #2563eb;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+.btn-primary.full {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+/* Register text */
+.register {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+.register .link {
+  color: #2563eb;
+}
+
+/* Animation */
+@keyframes slideZoom {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
+/* ===== Terms of Service Modal ===== */
+.modal-terms {
+  max-width: 500px;
+}
+
+.modal-scroll {
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 6px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+.modal-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.modal-scroll::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 10px;
+}
+
+/* Actions */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.btn-alt {
+  background: #f3f4f6;
+  color: #111827;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+.btn-alt:hover {
+  background: #e5e7eb;
+}

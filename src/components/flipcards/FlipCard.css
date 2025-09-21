@@ -1,0 +1,77 @@
+.flip-card {
+  width: 280px;
+  height: 360px;
+  perspective: 1000px;
+  margin: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  transition: transform 0.7s ease-in-out, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  color: white;
+}
+
+/* Purple → Blue Card */
+.flip-card.purple .flip-card-front {
+  background: linear-gradient(135deg, #7f00ff, #3f00ff);
+}
+.flip-card.purple .flip-card-back {
+  background: linear-gradient(135deg, #3f00ff, #2563f0);
+}
+
+/* Red → Black Card */
+.flip-card.red .flip-card-front {
+  background: linear-gradient(135deg, #ff0000, #8b0000);
+}
+.flip-card.red .flip-card-back {
+  background: linear-gradient(135deg, #8b0000, #1f1f1f);
+}
+
+/* Yellow → Green Card */
+.flip-card.yellow .flip-card-front {
+  background: linear-gradient(135deg, #facc15, #84cc16);
+}
+.flip-card.yellow .flip-card-back {
+  background: linear-gradient(135deg, #84cc16, #22c55e);
+}
+
+/* Common styles for text inside cards */
+.flip-card-front h3,
+.flip-card-back h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.flip-card-front p,
+.flip-card-back p {
+  font-size: 14px;
+}
+.flip-card-back ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+.flip-card-back li {
+  margin: 5px 0;
+}
+
+/* Flip animation */
+.flip-card.flipped .flip-card-front {
+  transform: rotateY(180deg);
+}
+.flip-card.flipped .flip-card-back {
+  transform: rotateY(360deg);
+}

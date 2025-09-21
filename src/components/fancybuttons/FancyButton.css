@@ -1,0 +1,125 @@
+.fancy-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 32px;
+  margin: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.fancy-btn span {
+  pointer-events: none;
+}
+
+.fancy-btn-bg {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transition: all 0.6s ease-out;
+  z-index: 0;
+}
+
+.fancy-btn:hover .fancy-btn-bg {
+  width: 220px;
+  height: 220px;
+}
+
+.fancy-btn-left,
+.fancy-btn-right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.fancy-btn-left {
+  left: 0;
+  width: 60px;
+}
+
+.fancy-btn-right {
+  right: 0;
+  width: 60px;
+}
+
+.fancy-btn-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
+  opacity: 0.3;
+}
+
+.fancy-btn-text {
+  position: relative;
+  z-index: 1;
+}
+
+/* 🔥 VARIANTS */
+
+/* ORANGE */
+.fancy-orange {
+  background: #1f2937;
+}
+.fancy-orange .fancy-btn-bg {
+  background: #ea580c;
+}
+
+/* BLUE */
+.fancy-blue {
+  background: #0f172a;
+}
+.fancy-blue .fancy-btn-bg {
+  background: #2563eb;
+}
+.fancy-blue:hover {
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.7);
+}
+
+/* GREEN */
+.fancy-green {
+  background: #064e3b;
+}
+.fancy-green .fancy-btn-bg {
+  background: #10b981;
+}
+.fancy-green:hover {
+  transform: scale(1.05);
+}
+
+/* PURPLE */
+.fancy-purple {
+  background: #3b0764;
+}
+.fancy-purple .fancy-btn-bg {
+  background: #9333ea;
+}
+.fancy-purple:hover {
+  letter-spacing: 2px;
+}
+
+/* RED */
+.fancy-red {
+  background: #450a0a;
+}
+.fancy-red .fancy-btn-bg {
+  background: #dc2626;
+}
+.fancy-red:hover {
+  transform: translateY(-3px);
+}

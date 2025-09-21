@@ -1,0 +1,53 @@
+.btn {
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  letter-spacing: 0.5px;
+}
+
+.sm { padding: 6px 14px; font-size: 14px; }
+.md { padding: 12px 22px; font-size: 16px; }
+.lg { padding: 16px 28px; font-size: 18px; }
+
+/* Unique gradient styles */
+.primary {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+}
+.primary:hover {
+  background: linear-gradient(135deg, #1e40af, #6d28d9);
+  transform: translateY(-2px);
+}
+.primary:active {
+  transform: scale(0.95);
+}
+
+.success {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: white;
+}
+.success:hover {
+  background: linear-gradient(135deg, #15803d, #16a34a);
+  transform: translateY(-2px);
+}
+
+.danger {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+  color: white;
+}
+.danger:hover {
+  background: linear-gradient(135deg, #b91c1c, #dc2626);
+  transform: translateY(-2px);
+}
+
+.secondary {
+  background: linear-gradient(135deg, #6b7280, #9ca3af);
+  color: white;
+}
+.secondary:hover {
+  background: linear-gradient(135deg, #4b5563, #6b7280);
+  transform: translateY(-2px);
+}

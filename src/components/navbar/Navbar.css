@@ -1,0 +1,97 @@
+/* Common styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.navbar .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Navbar 1 - Gradient background + underline hover */
+.navbar1 {
+  background: linear-gradient(45deg, #4facfe, #00f2fe);
+  color: white;
+}
+.navbar1 .nav-links a {
+  color: white;
+  position: relative;
+}
+.navbar1 .nav-links a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: white;
+  width: 0;
+  transition: 0.3s;
+}
+.navbar1 .nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Navbar 2 - Dark theme + hover background */
+.navbar2 {
+  background: #1e1e2f;
+  color: #f5f5f5;
+}
+.navbar2 .nav-links a {
+  color: #ddd;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+.navbar2 .nav-links a:hover {
+  background: #333;
+  color: white;
+}
+
+/* Navbar 3 - Glassmorphism with gradient button */
+.navbar3 {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(27, 17, 17, 0.2);
+  color: #222;
+}
+
+.navbar3 .nav-links a {
+  color: #222;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* 🔥 Hover effect for normal links */
+.navbar3 .nav-links a:hover {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  color: #fff !important;
+  transform: scale(1.05);
+}
+
+/* Gradient button style */
+.navbar3 .btn-gradient {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: white !important;
+  transition: transform 0.2s;
+}
+
+.navbar3 .btn-gradient:hover {
+  transform: scale(1.05);
+}
